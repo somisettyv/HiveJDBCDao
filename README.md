@@ -6,6 +6,16 @@ This is simple Java class that allows use to connect to Hive
        Query Data
        Load Data and so on
        
- Please download the        
+ Please download the "hive-jdbc-standalone" Jar from the following add to class path        
 
-http://central.maven.org/maven2/org/apache/hive/hive-jdbc/2.3.2/
+     http://central.maven.org/maven2/org/apache/hive/hive-jdbc/2.3.2/
+     
+ Compile and Run HiveQuery.java
+ 
+ 
+ Open JDBC connectors as follows 
+ 
+ 		Connection con = DriverManager.getConnection(
+				"jdbc:hive2://sandbox-hdp.hortonworks.com:2181/default;password=hive;serviceDiscoveryMode=zooKeeper;user=hive;zooKeeperNamespace=hiveserver2");
+
+   
